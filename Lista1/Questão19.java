@@ -1,15 +1,8 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package questão19;
+
 
 import java.util.Scanner;
 
-/**
- *
- * @author Monitoria
- */
 public class Questão19 {
 
     /**
@@ -39,15 +32,12 @@ public class Questão19 {
         qtdC = 29;
         qtdR = 40;
         qtdS = 23;
-        float percentR, percentS, percentC;
-        percentR = ((float) qtdR / (float) total) * 100;
-        System.out.println(percentR);
         System.out.println("Total: " + total + " cobaias");
         System.out.println("Total de coelhos: " + qtdC);
         System.out.println("Total de ratos: " + qtdR);
         System.out.println("Total de sapos: " + qtdS);
-      //  System.out.printf("Percentual de coelhos: %.2f % \n", ((float) qtdC / (float) total) * 100);
-        System.out.printf("Percentual de ratos: %.2f  \n", percentR);
-        System.out.printf("Percentual de sapos: %.2f  \n", ((float) qtdS / (float) total) * 100);
+        System.out.printf("Percentual de coelhos: %.2f  %% \n", ((float) qtdC / (float) total) * 100);
+        System.out.printf("Percentual de ratos: %.2f %% \n",((float) qtdR / (float) total) * 100);
+        System.out.printf("Percentual de sapos: %.2f %% \n", ((float) qtdS / (float) total) * 100);
     }
 }
