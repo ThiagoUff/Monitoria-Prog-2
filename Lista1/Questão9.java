@@ -16,33 +16,29 @@ public class Questão9 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Scanner teclado = new Scanner(System.in);
-
-        int horaI, horaF, minI, minF;
-        int difH, difM;
-        horaI = teclado.nextInt();
-        minI = teclado.nextInt();
-        horaF = teclado.nextInt();
-        minF = teclado.nextInt();
-
-        if (horaI == horaF) {
-            if (minI == minF) {
-                System.out.println("O JOGO DUROU 24 HORA(S) E 0 MINUTO(S)");
-            } else {
-                difM = minF - minI;
-                difH = horaF - horaI;
-                System.out.println("O JOGO DUROU " + difH + " HORA(S) E " + difM + " MINUTO(S)");
-            }
-        } else {
-            if (minF < minI) {
-                difH = horaF - horaI - 1;
-                difM = 60 + (minF - minI);
-                System.out.println("O JOGO DUROU " + difH + " HORA(S) E " + difM + " MINUTO(S)");
-            } else {
-                difM = minF - minI;
-                difH = horaF - horaI;
-                System.out.println("O JOGO DUROU " + difH + " HORA(S) E " + difM + " MINUTO(S)");
-            }
+          Scanner teclado = new Scanner(System.in);
+        int minutoInicio, minutoFim, horaInicio, horaFim;
+        horaInicio=teclado.nextInt();
+        minutoInicio=teclado.nextInt();
+        horaFim=teclado.nextInt();
+        minutoFim=teclado.nextInt();
+        
+        int duracaoMinutos = horaFim*60 + minutoFim - (horaInicio*60+minutoInicio);
+        
+        if(duracaoMinutos==0){
+            System.out.println("O JOGO DUROU 24 HORA(S) E 0 MINUTO(S)");
+        }
+        else if (duracaoMinutos>0){
+            int horas=duracaoMinutos/60;
+            int minutos=duracaoMinutos%60;
+            System.out.printf("O JOGO DUROU %d HORA(S) E %d MINUTO(S)\n", horas, minutos);
+        }
+        else{
+            duracaoMinutos=duracaoMinutos+24*60; //para compensar a volta do dia
+                                                 //somamos o total de minutos num dia
+            int horas=duracaoMinutos/60;
+            int minutos=duracaoMinutos%60;
+            System.out.printf("O JOGO DUROU %d HORA(S) E %d MINUTO(S)\n", horas, minutos);
 
         }
 
