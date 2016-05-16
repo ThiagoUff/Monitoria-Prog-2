@@ -33,11 +33,7 @@ public class Questão15 {
 
         while (x < y) {
             if (x % 2 != 0) {
-                System.out.println("x: " + x);
-                System.out.println("y: " + y);
-                System.out.println("-----------------");
                 soma = soma + x;
-                System.out.println("soma: " + soma);
             }
             x++;
         }
