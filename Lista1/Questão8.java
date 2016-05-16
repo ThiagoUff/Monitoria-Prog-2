@@ -49,7 +49,7 @@ public class Questão8 {
         System.out.println("c: " + c);
 
         if (a >= b + c) {
-            System.out.println("NÃO FORMA TRIANGULO");
+            System.out.println("NAO FORMA TRIANGULO");
         } else {
             if (Math.pow(a, 2) == Math.pow(b, 2) + Math.pow(c, 2)) {
                 System.out.println("TRIANGULO RETANGULO");
