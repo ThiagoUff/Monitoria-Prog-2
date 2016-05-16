@@ -39,7 +39,7 @@ public class Questão4 {
         if (pedido == 5){
             conta = qtd * 1.50;
         }
-        //System.out.println("Total: R$ %.2f\n,conta);
+        //System.out.printf("Total: R$ %.2f\n,conta);
         NumberFormat decimal = new DecimalFormat("0.00");
         System.out.println("Total: R$ "+decimal.format(conta));
        
