@@ -44,10 +44,6 @@ public class Questão8 {
             }
         }
 
-        System.out.println("a: " + a);
-        System.out.println("b: " + b);
-        System.out.println("c: " + c);
-
         if (a >= b + c) {
             System.out.println("NAO FORMA TRIANGULO");
         } else {
