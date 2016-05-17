@@ -19,7 +19,7 @@ public class Questao17 {
         Scanner teclado = new Scanner(System.in);
         int n = teclado.nextInt();
         int val;
-        for (int i = 1; i < n; i++) {
+        for (int i = 1; i <= n; i++) {
             val = teclado.nextInt();
             if (val == 0) {
                 System.out.println("NULL");
